@@ -1,0 +1,4 @@
+    1  ./init_replit
+    2  python main.py&
+    3  python main2.py&
+    4  history > downloads/w1_command.txt
