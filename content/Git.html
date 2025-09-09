@@ -2,6 +2,7 @@
         <head>
         <title>cad2025_hw</title>
         <meta charset="utf-8">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -95,6 +96,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -140,4 +142,72 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>SMap</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='Git.html'>Git</a><ul><li><a href='git-command.html'>git-command</a></li></ul><li><a href='Plotter.html'>Plotter</a><ul><li><a href='plotter-design.html'>plotter-design</a><li><a href='plotter-part.html'>plotter-part</a><li><a href='plotter-assem.html'>plotter-assem</a><li><a href='plotter-sim.html'>plotter-sim</a></li></ul><li><a href='Duck.html'>Duck</a><ul><li><a href='duck-design.html'>duck-design</a><li><a href='duck-part.html'>duck-part</a><li><a href='duck-assem.html'>duck-assem</a><li><a href='duck-sim.html'>duck-sim</a></li></ul><li><a href='Misc.html'>Misc</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='git-command.html'>Next</a> >> git-command<br /><h1>Git</h1>
+<p><span style="background-color: #ffff99;">循序設計流程:</span></p>
+<p>由組長透過 IPv6 位址啟動分組動態網站，逐一由組員登入維護網站內容，階段編輯結束後轉為靜態，再由組長進行提交推送。</p>
+<p>優點:</p>
+<p style="padding-left: 30px;">流程簡單直覺，各組員根據所分配的任務，逐一登入分組網站進行維護。</p>
+<p>缺點:</p>
+<p style="padding-left: 30px;">目前的 cmsimde 無法針對各組員登入所建立的版本內容與 Github 倉儲進行連結，因此無法辨識各組員再不同編輯階段的貢獻。</p>
+<p><span style="background-color: #ffff99;">同步協同設計流程:</span></p>
+<p>所有組員同時在負責維護的頁面，自行建立分支進行維護與推送後，透過拉回請求讓 reviewer 檢查後合併進入 main 分支，並轉為靜態網站。</p>
+<p>優點:</p>
+<p style="padding-left: 30px;">各組員可以同步進行網站內容修改，且透過提交訊息可清楚了解每一位組員在不同設計階段的貢獻</p>
+<p>缺點:</p>
+<p style="padding-left: 30px;">流程比循序設計複雜許多，各組員必須清楚如何使用 git 分支、合併、拉回請求等指令的使用時機。</p>
+<p>由於練習用的 <a href="https://github.com/mdecycu/cad_w1">https://github.com/mdecycu/cad_w1</a> 倉儲並沒有將組員內建為協同者，因此組長以 <a href="https://github.com/mdecycu/cad2025_hw">https://github.com/mdecycu/cad2025_hw</a> 作為 Template 建立練習用的協同倉儲後，必須在倉儲的 Settings - Collaborators 將組員納入作為倉儲的協同者。</p>
+<p>假如利用 Codespaces 管理網站，需要先執行 ./init_replit 安裝啟動所需模組，之後利用 python main.py&amp; 在背景執行動態網站，以 python main2.py&amp; 在背景執行靜態網站。</p>
+<p>其中動態網站用來編輯內容，編輯完成後按下 Convert 就可以轉為靜態網站內容，並在在 python main2.py&amp; 所啟動的瀏覽器頁面中檢視。</p>
+<p><a href="./../downloads/w1_command.txt">w1_command.txt</a></p>
+<p>各組員一開始分別負責各頁面內容時，採建立對應分支後進行編輯，轉為靜態網站確定內容後進行提交至該分支，然後建立 Pull Request 指令由組長或其他組員進行查驗後與 main 分支進行合併。</p>
+<p>負責其他頁面內容編輯的組員，則可在進行編輯之前儘量在最新 main 分支的版本中，建立對應分支後進行編輯，其後轉為靜態網站內容後，再利用 Pull Request 指定 reviewer 進行查驗與後續的 main 分支進行合併。</p><br />About << <a href='About.html'>Previous</a> <a href='git-command.html'>Next</a> >> git-command</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

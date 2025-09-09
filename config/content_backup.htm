@@ -1,4 +1,6 @@
 <h1>About</h1>
+<p>倉儲: <a href="https://github.com/mdecycu/cad_w1">https://github.com/mdecycu/cad_w1</a></p>
+<p>網站: <a href="https://mde.tw/cad_w1">https://mde.tw/cad_w1</a> </p>
 <p>課程名稱: 電腦輔助設計與實習</p>
 <p>課程評分:</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">學習心得報告 (60%)</span> - MS Teams 線上參與，6人一組每三週發表學習心得。</p>
@@ -11,8 +13,35 @@
 <p style="padding-left: 60px;">w17: 如何實作一套 <a href="https://youtu.be/iOLFP90DneY">5-bar Linkage Plotter</a> 與 <a href="https://mde.tw/cad2025/content/OpenDuck.html">Openduck mini</a>？(<a href="https://la.disneyresearch.com/publication/design-and-control-of-a-bipedal-robotic-character/">Disney Bipedal Robot</a>)</p>
 <p style="padding-left: 60px;">w18: 課程總結</p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff00;">個人與分組網站維護 (40%)</span> - 每週至少兩次推送與課程進度相關的學習內容與心得。</p>
-<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p>
-<h1>組員 A</h1>
-<h1><span>組員 B</span></h1>
-<h1><span>組員 C</span></h1>
+<p style="padding-left: 60px;">w9 期中自評、w18 期末自評</p><h1>Git</h1>
+<p>循序設計流程:</p>
+<p>由組長透過 IPv6 位址啟動分組動態網站，逐一由組員登入維護網站內容，階段編輯結束後轉為靜態，再由組長進行提交推送。</p>
+<p>優點:</p>
+<p style="padding-left: 30px;"></p>
+<p>同步協同設計流程:</p>
+<p>所有組員同時在負責維護的頁面，自行建立分支進行維護與推送後，透過拉回請求讓 reviewer 檢查後合併進入 main 分支，並轉為靜態網站。</p>
+<p>優點:</p>
+<p style="padding-left: 30px;">各組員可以同步進行網站內容修改，且透過提交訊息可清楚了解每一位組員在不同設計階段的貢獻</p>
+<p>缺點:</p>
+<p style="padding-left: 30px;">流程比循序設計複雜許多，各組員必須清楚如何使用 git 分支、合併、拉回請求等指令的使用時機。</p>
+<p>由於練習用的 <a href="https://github.com/mdecycu/cad_w1">https://github.com/mdecycu/cad_w1</a> 倉儲並沒有將組員內建為協同者，因此組長以 <a href="https://github.com/mdecycu/cad2025_hw">https://github.com/mdecycu/cad2025_hw</a> 作為 Template 建立練習用的協同倉儲後，必須在倉儲的 Settings - Collaborators 將組員納入作為倉儲的協同者。</p>
+<p>假如利用 Codespaces 管理網站，需要先執行 ./init_replit 安裝啟動所需模組，之後利用 python main.py&amp; 在背景執行動態網站，以 python main2.py&amp; 在背景執行靜態網站。</p>
+<p>其中動態網站用來編輯內容，編輯完成後按下 Convert 就可以轉為靜態網站內容，並在在 python main2.py&amp; 所啟動的瀏覽器頁面中檢視。</p>
+<p><a href="/downloads/w1_command.txt">w1_command.txt</a></p>
+<p>各組員一開始分別負責各頁面內容時，採建立對應分支後進行編輯，轉為靜態網站確定內容後進行提交至該分支，然後建立 Pull Request 指令由組長或其他組員進行查驗後與 main 分支進行合併。</p>
+<p>負責其他頁面內容編輯的組員，則可在進行編輯之前儘量在最新 main 分支的版本中，建立對應分支後進行編輯，其後轉為靜態網站內容後，再利用 Pull Request 指定 reviewer 進行查驗與後續的 main 分支進行合併。</p><h2>git-command</h2>
+<h1>Plotter</h1>
+<h2>plotter-design</h2>
+<h2>plotter-part</h2>
+<h2>plotter-assem</h2>
+<h2>plotter-sim</h2>
+<h1>Duck</h1>
+<h2>duck-design</h2>
+<h2>duck-part</h2>
+<h2>duck-assem</h2>
+<h2>duck-sim</h2>
+<h1>Misc</h1>
+<p>IPv6 網路位址分配:</p>
+<p style="padding-left: 30px;"><a href="https://localhost:9441/downloads/network_setup.7z">network_setup.7z</a></p>
+<p style="padding-left: 30px;">2b 分配名單: <a href="https://localhost:9441/downloads/cad_2b_ipv6_address.txt">cad_2b_ipv6_address.txt</a></p>
 <p></p>
